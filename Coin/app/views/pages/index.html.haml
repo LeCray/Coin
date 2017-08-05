@@ -1,7 +1,16 @@
 %h1
-	My Bank
+	GALXYCOIN
 
 
 .row
 	.col-md-12
-		Stuff
+		%h2
+		Number of Users: #{number_of_users}
+		%h2
+		Number of Accounts: #{number_of_accounts}
+
+.row
+	.col-md-12
+		= link_to accounts_path do
+			Accounts
+

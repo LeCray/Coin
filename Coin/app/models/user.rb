@@ -1,7 +1,7 @@
 class User < ApplicationRecord
 	validates :first_name, presence: true
 	validates :last_name, presence: true
-	validates :client_number, presence: true, uniqueness: true
+	validates :user_number, presence: true, uniqueness: true
 
 	before_save :format_name
 
