@@ -8,4 +8,11 @@ Rails.application.config.assets.version = '1.0'
 
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
-# Rails.application.config.assets.precompile += %w( search.js )
+Rails.application.config.assets.precompile += [
+	'accounts/Show.js'
+]
+Rails.application.config.assets.precompile += %w( pages/Particles.js )
+
+Rails.application.config.assets.precompile += %w( accounts/jquery.js )
+
+ 

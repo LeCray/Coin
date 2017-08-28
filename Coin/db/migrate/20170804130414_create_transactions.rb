@@ -4,7 +4,7 @@ class CreateTransactions < ActiveRecord::Migration[5.0]
       t.string :type
       t.decimal :amount
       t.string :transaction_number
-      t.references :bank_account, foreign_key: true
+      t.references :account, foreign_key: true
 
       t.timestamps
     end
